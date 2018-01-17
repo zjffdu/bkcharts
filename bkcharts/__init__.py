@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 
 # defaults and constants
-from bokeh.plotting.helpers import DEFAULT_PALETTE; DEFAULT_PALETTE
+DEFAULT_PALETTE = ["#f22c40", "#5ab738", "#407ee7", "#df5320", "#00ad9c", "#c33ff3"]
 
 # main components
 from .chart import Chart, defaults
@@ -29,7 +29,8 @@ from .builders.chord_builder import Chord
 
 # easy access to required bokeh components
 from bokeh.models import ColumnDataSource; ColumnDataSource
-from bokeh.io import curdoc, output_file, output_notebook, reset_output, save, show, gridplot
+from bokeh.io import curdoc, output_file, output_notebook, reset_output, save, show
+from bokeh.layouts import gridplot
 
 # Silence pyflakes
 (curdoc, output_file, output_notebook, reset_output, save, show, gridplot)

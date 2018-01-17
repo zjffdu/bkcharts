@@ -18,10 +18,10 @@ It also add a new chained stacked method.
 # -----------------------------------------------------------------------------
 from __future__ import absolute_import, print_function, division
 
-from bokeh.core.enums import Aggregation
 from bokeh.core.properties import Float, Enum, Bool, Override
 from bokeh.models import FactorRange, Range1d
 from bokeh.models.sources import ColumnDataSource
+from bokeh.core.enums import enumeration
 
 from ..builder import Builder, create_and_build
 from ..glyphs import BarGlyph
@@ -31,6 +31,9 @@ from ..operations import Stack, Dodge
 from ..stats import stats
 from ..utils import help
 
+
+#: Specify an aggregation type
+Aggregation = enumeration("sum", "mean", "count", "nunique", "median", "min", "max")
 
 # -----------------------------------------------------------------------------
 # Classes and functions

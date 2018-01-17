@@ -20,7 +20,7 @@ from bokeh.models.glyphs import (
     Asterisk, Circle, CircleCross, CircleX, Cross, Diamond, DiamondCross,
     InvertedTriangle, Square, SquareCross, SquareX, Triangle, X
 )
-from bokeh.plotting.helpers import DEFAULT_PALETTE
+from bkcharts import DEFAULT_PALETTE
 from bokeh.models.sources import ColumnDataSource
 
 DEFAULT_COLUMN_NAMES = 'abcdefghijklmnopqrstuvwxyz'
